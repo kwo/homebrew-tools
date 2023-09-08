@@ -1,6 +1,6 @@
 # homebrew-tools
 
-Homebrew formula for installing [kwo](https://githib.com/kwo)'s tools.
+Homebrew formula for installing [kwo](https://github.com/kwo)'s tools.
 
 ## How To Use
 

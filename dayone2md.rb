@@ -5,20 +5,20 @@
 class Dayone2md < Formula
   desc ""
   homepage "https://github.com/kwo/homebrew-tools"
-  version "1.1.0"
+  version "1.2.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kwo/dayone2md/releases/download/v1.1.0/dayone2md_Darwin_arm64.tar.gz"
-      sha256 "01431b5340434c5cff078ce78287bc7564f7381bf1d8545fc26260e79b1e4d3b"
+      url "https://github.com/kwo/dayone2md/releases/download/v1.2.1/dayone2md_Darwin_arm64.tar.gz"
+      sha256 "7f5ef5bdc900eaea41676cf34abdf955b79b7d93751f1a18792463e40ea488c6"
 
       def install
         bin.install "dayone2md"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kwo/dayone2md/releases/download/v1.1.0/dayone2md_Darwin_x86_64.tar.gz"
-      sha256 "17233b3abc9118498e9c061fdf1227630218c8b00b6e371efc5a465a1ec35694"
+      url "https://github.com/kwo/dayone2md/releases/download/v1.2.1/dayone2md_Darwin_x86_64.tar.gz"
+      sha256 "7af9596f8c263ed8dad099e14551e9d8d406a46ac6e4dc8d7639f4a17f331564"
 
       def install
         bin.install "dayone2md"
@@ -28,16 +28,16 @@ class Dayone2md < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kwo/dayone2md/releases/download/v1.1.0/dayone2md_Linux_arm64.tar.gz"
-      sha256 "73d0f6b4d663cb1054a76a3aab44c06ce4f6bbcb94b5e67c8d76eb0dc8dc1de8"
+      url "https://github.com/kwo/dayone2md/releases/download/v1.2.1/dayone2md_Linux_arm64.tar.gz"
+      sha256 "2974972677462b1159765fff9c42cf16e917b44eb1d3c15c531405774bfa9b46"
 
       def install
         bin.install "dayone2md"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kwo/dayone2md/releases/download/v1.1.0/dayone2md_Linux_x86_64.tar.gz"
-      sha256 "f97e5a9bf9f01d9fc216c996a9c194bb99adcb8e43b7a1cb11ecded228bfc0f3"
+      url "https://github.com/kwo/dayone2md/releases/download/v1.2.1/dayone2md_Linux_x86_64.tar.gz"
+      sha256 "366a8b5976e5a6ba597816a06244500e91798b2a3b390c38dbf9b94a036d5737"
 
       def install
         bin.install "dayone2md"

@@ -5,20 +5,20 @@
 class Uts < Formula
   desc ""
   homepage "https://github.com/kwo/homebrew-tools"
-  version "1.1.0"
+  version "1.1.1"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/kwo/uts/releases/download/v1.1.0/uts_Darwin_arm64.tar.gz"
-      sha256 "af0ec372e0e62ecb88c6f5d9014047f72ee3bcb87876ac70d9e0f3401b819b53"
+    if Hardware::CPU.intel?
+      url "https://github.com/kwo/uts/releases/download/v1.1.1/uts_Darwin_x86_64.tar.gz"
+      sha256 "690749a907bcb4c60fe5b963515cdf46a61ca49187a51cee7e696da2c03cc9fa"
 
       def install
         bin.install "uts"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/kwo/uts/releases/download/v1.1.0/uts_Darwin_x86_64.tar.gz"
-      sha256 "baf19343972292fcc8ce33eff8e31269cae85456c9aaa2805621359f77bf44ff"
+    if Hardware::CPU.arm?
+      url "https://github.com/kwo/uts/releases/download/v1.1.1/uts_Darwin_arm64.tar.gz"
+      sha256 "d00507506e055c42578707bc01f27698db685a86d316c6b31b922e819582aa24"
 
       def install
         bin.install "uts"
@@ -27,17 +27,17 @@ class Uts < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kwo/uts/releases/download/v1.1.0/uts_Linux_arm64.tar.gz"
-      sha256 "38d4045f3b53583da1d43c814dddff4e05f8de5abff3ab96778262d9bd7701c7"
+    if Hardware::CPU.intel?
+      url "https://github.com/kwo/uts/releases/download/v1.1.1/uts_Linux_x86_64.tar.gz"
+      sha256 "295690bec6029abd91ec84a904a4b53c1a4e86d80a5415dc8ff59e14a07efef0"
 
       def install
         bin.install "uts"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/kwo/uts/releases/download/v1.1.0/uts_Linux_x86_64.tar.gz"
-      sha256 "3771723b517254e8534f136e5fb32da968fb51d5cbb4cb3c6356595737faaffa"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/kwo/uts/releases/download/v1.1.1/uts_Linux_arm64.tar.gz"
+      sha256 "1fe1753c6283db216049546f49ed02e8ce4b3ea66ea1d0210938e6eba9b777b8"
 
       def install
         bin.install "uts"

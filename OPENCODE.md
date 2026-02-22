@@ -10,10 +10,10 @@ Guide for running `opencode` with Homebrew on macOS.
 brew install opencode
 ```
 
-Install the service wrapper from this tap:
+Install the web service wrapper from this tap:
 
 ```sh
-brew install kwo/tools/opencode-service
+brew install kwo/tools/opencode-web
 ```
 
 ## Run interactively
@@ -25,20 +25,20 @@ opencode
 ## Run as a Homebrew service
 
 ```sh
-brew services start kwo/tools/opencode-service
-brew services list | rg opencode-service
+brew services start opencode-web
+brew services list | rg opencode-web
 ```
 
 Restart after config changes:
 
 ```sh
-brew services restart kwo/tools/opencode-service
+brew services restart opencode-web
 ```
 
 Stop the service:
 
 ```sh
-brew services stop kwo/tools/opencode-service
+brew services stop opencode-web
 ```
 
 ## Configure the service
@@ -46,18 +46,18 @@ brew services stop kwo/tools/opencode-service
 Edit:
 
 ```sh
-$(brew --prefix)/etc/opencode-service.env
+$(brew --prefix)/etc/opencode-web.env
 ```
 
 Then restart:
 
 ```sh
-brew services restart kwo/tools/opencode-service
+brew services restart opencode-web
 ```
 
 ## Logs
 
 ```sh
-tail -f $(brew --prefix)/var/log/opencode-service.log
-tail -f $(brew --prefix)/var/log/opencode-service.err.log
+tail -f $(brew --prefix)/var/log/opencode-web.log
+tail -f $(brew --prefix)/var/log/opencode-web.err.log
 ```

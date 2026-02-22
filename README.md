@@ -2,6 +2,10 @@
 
 Homebrew formula for installing [kwo](https://github.com/kwo)'s tools.
 
+## Docs
+
+- [opencode guide](OPENCODE.md)
+
 ## How To Use
 
 Add repository:
@@ -21,4 +25,3 @@ Upgrade to the latest version:
 ```sh
 brew upgrade dayone2md
 ```
-

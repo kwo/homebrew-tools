@@ -15,7 +15,7 @@ brew tap kwo/tools
 Install [dayone2md](https://github.com/kwo/dayone2md):
 
 ```sh
-brew install dayone2md
+brew install kwo/tools/dayone2md
 ```
 
 ---
@@ -23,7 +23,7 @@ brew install dayone2md
 Install [uts](https://github.com/kwo/uts):
 
 ```sh
-brew install uts
+brew install kwo/tools/uts
 ```
 
 ---
@@ -31,5 +31,5 @@ brew install uts
 Install [todolist](https://github.com/kwo/todolist):
 
 ```sh
-brew install todolist
+brew install kwo/tools/todolist
 ```

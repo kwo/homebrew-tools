@@ -2,10 +2,6 @@
 
 Homebrew formula for installing [kwo](https://github.com/kwo)'s tools.
 
-## Docs
-
-- [opencode guide](OPENCODE.md)
-
 ## How To Use
 
 Add repository:
@@ -14,14 +10,26 @@ Add repository:
 brew tap kwo/tools
 ```
 
+---
+
 Install [dayone2md](https://github.com/kwo/dayone2md):
 
 ```sh
 brew install dayone2md
 ```
 
-Upgrade to the latest version:
+---
+
+Install [uts](https://github.com/kwo/uts):
 
 ```sh
-brew upgrade dayone2md
+brew install uts
+```
+
+---
+
+Install [todolist](https://github.com/kwo/todolist):
+
+```sh
+brew install todolist
 ```

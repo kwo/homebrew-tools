@@ -5,25 +5,25 @@
 class Todolist < Formula
   desc "Local-first CLI for managing todos stored as Markdown files"
   homepage "https://github.com/kwo/todolist"
-  version "1.0.1"
+  version "1.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kwo/todolist/releases/download/v1.0.1/todolist_v1.0.1_darwin_arm64.tar.gz"
-      sha256 "fc2fa1859d3ffbae6da63f90b147a5bdf62b4b06f1794026832a5ffd6c22d899"
+      url "https://github.com/kwo/todolist/releases/download/v1.0.2/todolist_v1.0.2_darwin_arm64.tar.gz"
+      sha256 "77bb72363ad526891531f4c20a15ca99201ad2193c60544f5758f4511433fc94"
     elsif Hardware::CPU.intel?
-      url "https://github.com/kwo/todolist/releases/download/v1.0.1/todolist_v1.0.1_darwin_amd64.tar.gz"
-      sha256 "00429e51ff33646ca094f96f962d4db8ececd608fd550ae5fbbfcd81b3169c72"
+      url "https://github.com/kwo/todolist/releases/download/v1.0.2/todolist_v1.0.2_darwin_amd64.tar.gz"
+      sha256 "265f971d57fc85103c01196092f50e90b1fe3391096e5172478b5b47e6c1d14e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kwo/todolist/releases/download/v1.0.1/todolist_v1.0.1_linux_arm64.tar.gz"
-      sha256 "3ed5e3f9629dbc144ad1a252743da49b8ac84dff56bf4e46fcbf487eaf848e1e"
+      url "https://github.com/kwo/todolist/releases/download/v1.0.2/todolist_v1.0.2_linux_arm64.tar.gz"
+      sha256 "a3e02ef98e12a8a28e02e54c231283a87717c83f0d926c8059101cfcd86944ab"
     elsif Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kwo/todolist/releases/download/v1.0.1/todolist_v1.0.1_linux_amd64.tar.gz"
-      sha256 "63eae8cc90aa8c0a106bf19c86196ce5e7bc279b75661af84cb4eec08d848832"
+      url "https://github.com/kwo/todolist/releases/download/v1.0.2/todolist_v1.0.2_linux_amd64.tar.gz"
+      sha256 "d3174bbb62cde7968d8a24b3e022eacb1a52238bcd0b735e989a5696cf13fa21"
     end
   end
 

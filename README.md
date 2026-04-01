@@ -20,10 +20,10 @@ brew install kwo/tools/dayone2md
 
 ---
 
-Install [uts](https://github.com/kwo/uts):
+Install [todolist](https://github.com/kwo/gfa):
 
 ```sh
-brew install kwo/tools/uts
+brew install kwo/tools/gfa
 ```
 
 ---
@@ -32,4 +32,12 @@ Install [todolist](https://github.com/kwo/todolist):
 
 ```sh
 brew install kwo/tools/todolist
+```
+
+---
+
+Install [uts](https://github.com/kwo/uts):
+
+```sh
+brew install kwo/tools/uts
 ```

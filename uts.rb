@@ -5,43 +5,16 @@
 class Uts < Formula
   desc "Unix timestamp conversion CLI"
   homepage "https://github.com/kwo/uts"
-  version "1.1.4"
-
-  on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/kwo/uts/releases/download/v1.1.4/uts_v1.1.4_darwin_arm64.tar.gz"
-      sha256 "7592f18d38afaf0469993943b678043b9e150d268c265a87116b25330800546a"
-    elsif Hardware::CPU.intel?
-      url "https://github.com/kwo/uts/releases/download/v1.1.4/uts_v1.1.4_darwin_amd64.tar.gz"
-      sha256 "b28cca64d18f320395fdc24303e3bdd22dd396282d8243503776a4504b4de9e7"
-    end
-  end
-
-  on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kwo/uts/releases/download/v1.1.4/uts_v1.1.4_linux_arm64.tar.gz"
-      sha256 "b57af5f886de3ae2c7501a5ace40289a49376ef1dfc7536978c3a05d19bea4c9"
-    elsif Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kwo/uts/releases/download/v1.1.4/uts_v1.1.4_linux_amd64.tar.gz"
-      sha256 "468d2f8cb0a5e26db12c2ab148b7b2f5339977c1353428dbc21da9ed9342fbc7"
-    end
-  end
+  url "https://github.com/kwo/uts/releases/download/v1.2.0/uts_v1.2.0.tar.gz"
+  sha256 "fc5471d402f33ec3968da52b675d6511ed71d9e46eeae90adc737bcdee88b8c0"
+  version "1.2.0"
+  depends_on "node"
 
   def install
-    if OS.mac?
-      if Hardware::CPU.arm? || Hardware::CPU.intel?
-        bin.install "uts"
-      else
-        odie "uts supports only macOS/Linux on amd64/arm64"
-      end
-    elsif OS.linux?
-      if (Hardware::CPU.arm? || Hardware::CPU.intel?) && Hardware::CPU.is_64_bit?
-        bin.install "uts"
-      else
-        odie "uts supports only macOS/Linux on amd64/arm64"
-      end
+    if OS.mac? || OS.linux?
+      bin.install "uts"
     else
-      odie "uts supports only macOS/Linux on amd64/arm64"
+      odie "uts supports only macOS/Linux"
     end
   end
 end

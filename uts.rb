@@ -5,9 +5,9 @@
 class Uts < Formula
   desc "Unix timestamp conversion CLI"
   homepage "https://github.com/kwo/uts"
-  url "https://github.com/kwo/uts/releases/download/v1.2.0/uts_v1.2.0.tar.gz"
-  sha256 "fc5471d402f33ec3968da52b675d6511ed71d9e46eeae90adc737bcdee88b8c0"
-  version "1.2.0"
+  url "https://github.com/kwo/uts/releases/download/v1.2.1/uts_v1.2.1.tar.gz"
+  sha256 "9fdfea50a37c90620e3f3e860fc7a1919b632bf5dae4c22b114b55a1e6743ad2"
+  version "1.2.1"
   depends_on "node"
 
   def install

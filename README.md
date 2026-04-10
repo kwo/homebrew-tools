@@ -8,36 +8,14 @@ Add repository:
 
 ```sh
 brew tap kwo/tools
+brew install kwo/tools/<name>
 ```
 
----
+## Repositories
 
-Install [dayone2md](https://github.com/kwo/dayone2md):
-
-```sh
-brew install kwo/tools/dayone2md
-```
-
----
-
-Install [todolist](https://github.com/kwo/gfa):
-
-```sh
-brew install kwo/tools/gfa
-```
-
----
-
-Install [todolist](https://github.com/kwo/todolist):
-
-```sh
-brew install kwo/tools/todolist
-```
-
----
-
-Install [uts](https://github.com/kwo/uts):
-
-```sh
-brew install kwo/tools/uts
-```
+| Formula | Description |
+| --- | --- |
+| [dayone2md](https://github.com/kwo/dayone2md) | Export [Dayone](https://dayoneapp.com/) to Markdown |
+| [gfa](https://github.com/kwo/gfa) | Git Fetch All CLI for scanning and updating repos in bulk |
+| [todolist](https://github.com/kwo/todolist) | Local-first CLI for managing todos stored as Markdown files |
+| [uts](https://github.com/kwo/uts) | Unix timestamp conversion CLI |

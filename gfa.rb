@@ -5,9 +5,9 @@
 class Gfa < Formula
   desc "Git Fetch All CLI for scanning and updating repos in bulk"
   homepage "https://github.com/kwo/gfa"
-  url "https://github.com/kwo/gfa/releases/download/v1.1.0/gfa_v1.1.0.tar.gz"
-  sha256 "d3f5c0d44b0e0c349fd45bcc2b03ffb7e32563233ef6a62a35c5989aa6e8c415"
-  version "1.1.0"
+  url "https://github.com/kwo/gfa/releases/download/v1.2.0/gfa_v1.2.0.tar.gz"
+  sha256 "5cc38ab833372bed3a74d58ec0ded66da1cb498d62c5e901aae605a64d329741"
+  version "1.2.0"
   depends_on "node"
 
   def install
